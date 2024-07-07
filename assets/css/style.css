@@ -112,7 +112,7 @@ ul.custom-list li {
 }
 
 .text-p {
-  color: rgb(0, 0, 0, .70);
+  color: rgb(0, 0, 0, 0.7);
   font-weight: 800;
   font-size: 16px;
   margin-bottom: 0px;
@@ -121,15 +121,116 @@ ul.custom-list li {
   display: block;
 }
 
+.content-1-section img {
+  width: 100%;
+  height: auto;
+}
 
- /* Media query for mobile screens */
- @media (max-width: 768px) {
+.content-1-section .col-md-4 img {
+  position: relative;
+}
+
+.content-1-section .col-md-4 img + img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section {
+  padding: 3rem;
+  margin: 1rem;
+}
+
+.content-2-section .text-center {
+  position: relative;
+}
+
+.content-2-section .text-center img:first-child {
+  position: absolute;
+  top: -16px;
+  left: 25px;
+}
+
+.content-2-section .text-center img.w-100 {
+  width: 100%;
+  height: auto;
+}
+.iframe {
+  display: block;
+}
+.announcement {
+  display: block;
+}
+.announcement-mx {
+  display: none;
+}
+
+.mx-div {
+  display: block;
+}
+
+.sec-head {
+  margin-bottom: 35px;
+}
+
+.contact-sec {
+  display: flex;
+  align-items: center;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .mx-div {
+    display: none;
+  }
+  .banner-section {
+    height: auto;
+  }
   .banner-section img.bg-img {
-      content: url('../img/bannerSecton-mx.png');
-      width: 100%;
-      height: 45%;
+    content: url("../img/bannerSecton-mx.png");
+    width: 100%;
+    height: 50%;
   }
   .logo-container {
     display: none;
+  }
+  .content-1-section .col-md-4 {
+    margin-bottom: 20px;
+  }
+  .section {
+    margin: 0;
+    padding: 5px;
+  }
+  ul.custom-list {
+    font-size: 12px;
+  }
+  .content-2-section .text-center img:first-child {
+    position: static;
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 100%;
+  }
+  .content-2-section .text-center img.w-100 {
+    position: static;
+  }
+  .iframe {
+    display: none;
+  }
+  .announcement-mx {
+    display: block;
+  }
+  .announcement {
+    display: none;
+  }
+  .sec-head {
+    margin-bottom: 15px;
+  }
+
+  .contact-section {
+    text-align: center;
+    padding: 15px;
+    filter: none !important;
+  }
+  .contact-section .sec-head {
+    padding: 10px;
   }
 }
