@@ -148,6 +148,7 @@ ul.custom-list li {
   position: absolute;
   top: -16px;
   left: 25px;
+  width: 100%;
 }
 
 .content-2-section .text-center img.w-100 {
