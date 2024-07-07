@@ -117,7 +117,9 @@ ul.custom-list li {
   font-size: 16px;
   margin-bottom: 0px;
 }
-
+.logo-container {
+  display: block;
+}
 
 
  /* Media query for mobile screens */
@@ -125,6 +127,9 @@ ul.custom-list li {
   .banner-section img.bg-img {
       content: url('../img/bannerSecton-mx.png');
       width: 100%;
-      height: 75%;
+      height: 45%;
+  }
+  .logo-container {
+    display: none;
   }
 }
