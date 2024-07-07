@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #ff3023;
+}
+body {
+  font-family: "Noto Sans Tamil", sans-serif;
+}
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.banner-section img.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-section .logo-container {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 200px;
+}
+.banner-section .logo-container .logo {
+  width: 77%;
+  animation: spin 3s infinite linear;
+}
+.banner-section .logo-container .overlay-logo {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  /* Adjust the size of the overlay logo as needed */
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ul.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+ul.custom-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+ul.custom-list li::before {
+  content: "";
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/listIconFire.png");
+  background-size: cover;
+}
+.content-1-section,
+.content-3-section,
+.content-4-section {
+  background: url(../img/Leaves_shadow_bg.png);
+}
+ul.custom-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.58); /* Black color with 58% opacity */
+  font-weight: 900;
+}
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  height: 100%;
+  padding: 1px;
+  border: 1px solid #f77a345e;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+.gallery .gallery-item img {
+  transition: all ease-in-out 2s;
+  height: 300px;
+  width: 100%;
+}
+.gallery .gallery-item:hover img {
+  transform: scale(1.5);
+}
+.font {
+  font-weight: 900;
+  color: #ff3023;
+  font-size: 28px;
+}
+
+.icon {
+  padding: 15px;
+  border: 4px solid #ff3023c9;
+  border-radius: 45px;
+  font-size: 29px;
+  color: var(--primary-color);
+}
+
+.text-p {
+  color: rgb(0, 0, 0, .70);
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+
+
+ /* Media query for mobile screens */
+ @media (max-width: 768px) {
+  .banner-section img.bg-img {
+      content: url('../img/bannerSecton-mx.png');
+      width: 100%;
+      height: 75%;
+  }
+}
