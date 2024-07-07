@@ -175,6 +175,7 @@ ul.custom-list li {
 .contact-sec {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 /* Media query for mobile screens */
